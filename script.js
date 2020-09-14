@@ -40,15 +40,9 @@ const formatDateShort = str => str.replace(/(\d{4})-(\d{2})-(\d{2})/g, '$3/$2');
 const generateDate = num => formatDateLong(new Date(new Date().getTime() + num));
 
 const startList = [
-	{name:'Saumon', date:generateDate(-d * 9), recipe:'', opened:'true'},
-	{name:'Fromage rapé', date:generateDate(-d * 3), recipe:'Omelette', opened:'false'},
-	{name:'Crème fraiche', date:generateDate(0), recipe:'Chantilly', opened:'false'},
-	{name:'Saucisses', date:generateDate(d * 2), recipe:'', opened:'true'},
-	{name:'Lardons', date:generateDate(d * 2), recipe:'Salade composée', opened:'false'},
-	{name:'Camembert', date:generateDate(d * 4), recipe:'', opened:'false'},
-	{name:'Lait', date:generateDate(d * 5), recipe:'', opened:'false'},
-	{name:'Pizza', date:generateDate(d * 7), recipe:'', opened:'true'},
-	{name:'Gnocchis', date:generateDate(d * 10), recipe:'', opened:'false'}
+	{name:'Doliprane', date:generateDate(-d * 9), recipe:'Maux de tête', opened:'true'},
+	{name:'Spasfon', date:generateDate(-d * 3), recipe:'Maux de ventre', opened:'false'},
+	{name:'Ventoline', date:generateDate(0), recipe:'Allergie', opened:'false'}
 ]
 
 /* Generate list with listItems */
